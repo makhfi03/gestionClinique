@@ -25,10 +25,16 @@ Cela entraîne :
 
 ## Objectifs
 L'application aura pour but de :
+
 ✔ Numériser la gestion des patients (création, modification, consultation).
+
 ✔ Faciliter la prise de rendez-vous (disponibilité des médecins, alertes de conflits).
+
 ✔ Automatiser la facturation (génération de factures, suivi des paiements).
+
 ✔ Sécuriser les données (accès par rôles : administrateur, médecin, secrétaire).
+
 ✔ Générer des statistiques (fréquentation, revenus, diagnostics fréquents).
+
 
 ## Diagramme de Classe

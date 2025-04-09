@@ -15,9 +15,13 @@ La gestion du personnel médical
 La facturation
 
 Cela entraîne :
+
 ✅ Des erreurs humaines (doublons, perte de données).
+
 ✅ Une perte de temps dans la recherche d'informations.
+
 ✅ Une difficulté à générer des rapports (statistiques, suivi des patients).
+
 
 ## Objectifs
 L'application aura pour but de :

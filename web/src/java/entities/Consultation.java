@@ -35,6 +35,7 @@ public class Consultation {
         this.dateConsultation = dateConsultation;
         this.diagnostic = diagnostic;
     }
+
     
     public int getId() {
         return id;
@@ -74,7 +75,6 @@ public class Consultation {
 
     public void setDiagnostic(String diagnostic) {
         this.diagnostic = diagnostic;
-    }
-    
+    }    
     
 }

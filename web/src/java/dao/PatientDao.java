@@ -1,8 +1,5 @@
-
 package dao;
 
-import entities.Consultation;
-import entities.Medecin;
 import entities.Patient;
 import java.util.List;
 import org.hibernate.HibernateException;
@@ -10,10 +7,10 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import util.HibernateUtil;
 
-public class ConsultationDao implements IDao<Consultation>{
+public class PatientDao implements IDao<Patient> {
 
     @Override
-    public boolean create(Consultation o) {
+    public boolean create(Patient o) {
         Session session = null;
         Transaction tx = null;
         boolean etat = false;
@@ -23,19 +20,16 @@ public class ConsultationDao implements IDao<Consultation>{
             session.save(o);
             tx.commit();
             etat = true;
-           
         } catch (HibernateException e) {
-            if(tx != null)
-                tx.rollback();
-        }finally{
-            if (session != null) 
-                session.close();
+            if(tx != null) tx.rollback();
+        } finally {
+            if (session != null) session.close();
         }
         return etat;
     }
 
     @Override
-    public boolean delete(Consultation o) {
+    public boolean delete(Patient o) {
         Session session = null;
         Transaction tx = null;
         boolean etat = false;
@@ -45,19 +39,16 @@ public class ConsultationDao implements IDao<Consultation>{
             session.delete(o);
             tx.commit();
             etat = true;
-           
         } catch (HibernateException e) {
-            if(tx != null)
-                tx.rollback();
-        }finally{
-            if (session != null) 
-                session.close();
+            if(tx != null) tx.rollback();
+        } finally {
+            if (session != null) session.close();
         }
         return etat;
     }
 
     @Override
-    public boolean update(Consultation o) {
+    public boolean update(Patient o) {
         Session session = null;
         Transaction tx = null;
         boolean etat = false;
@@ -67,63 +58,47 @@ public class ConsultationDao implements IDao<Consultation>{
             session.update(o);
             tx.commit();
             etat = true;
-           
         } catch (HibernateException e) {
-            if(tx != null)
-                tx.rollback();
-        }finally{
-            if (session != null) 
-                session.close();
+            if(tx != null) tx.rollback();
+        } finally {
+            if (session != null) session.close();
         }
-        return etat;    }
-
-    @Override
-    public List<Consultation> findAll() {
-        Session session = null;
-        Transaction tx = null;
-        List<Consultation> consultations = null;
-        try {
-            session = HibernateUtil.getSessionFactory().openSession();
-            tx = session.beginTransaction();
-            consultations = session.createQuery("from Consultation").list();
-            tx.commit();
-        } catch (HibernateException e) {
-            if(tx != null)
-                tx.rollback();
-        }finally{
-            if (session != null) 
-                session.close();
-        }
-        return consultations;    
+        return etat;
     }
 
     @Override
-    public Consultation findById(int id) {
+    public List<Patient> findAll() {
         Session session = null;
         Transaction tx = null;
-        Consultation consultation = null;
+        List<Patient> patients = null;
         try {
             session = HibernateUtil.getSessionFactory().openSession();
             tx = session.beginTransaction();
-            consultation = (Consultation) session.get(Consultation.class, id);
+            patients = session.createQuery("from Patient").list();
             tx.commit();
         } catch (HibernateException e) {
-            if(tx != null)
-                tx.rollback();
-        }finally{
-            if (session != null) 
-                session.close();
+            if(tx != null) tx.rollback();
+        } finally {
+            if (session != null) session.close();
         }
-        return consultation;    
+        return patients;
     }
-    
-     public void createEntities(Patient patient, Medecin medecin) {
-        Session session = HibernateUtil.getSessionFactory().openSession();
-        Transaction tx = session.beginTransaction();
-        session.save(patient);
-        session.save(medecin);
-        tx.commit();
-        session.close();
+
+    @Override
+    public Patient findById(int id) {
+        Session session = null;
+        Transaction tx = null;
+        Patient patient = null;
+        try {
+            session = HibernateUtil.getSessionFactory().openSession();
+            tx = session.beginTransaction();
+            patient = (Patient) session.get(Patient.class, id);
+            tx.commit();
+        } catch (HibernateException e) {
+            if(tx != null) tx.rollback();
+        } finally {
+            if (session != null) session.close();
+        }
+        return patient;
     }
-    
 }

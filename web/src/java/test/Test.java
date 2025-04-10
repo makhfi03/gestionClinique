@@ -1,48 +1,84 @@
 package test;
 
 import dao.ConsultationDao;
+import dao.MedecinDao;
+import dao.PatientDao;
 import entities.Consultation;
 import entities.Medecin;
 import entities.Patient;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Test {
     public static void main(String[] args) {
         try {
-            // Création du patient
+           
             Patient patient = new Patient();
-            patient.setNom("Ghita Makhfi");
-            patient.setAge(30);
+            patient.setNom("Ghita");
+            patient.setAge(28);
             patient.setSexe("Femme");
 
-            // Création du médecin
             Medecin medecin = new Medecin();
-            medecin.setNom("Dr Leila Benani");
+            medecin.setNom("Dr. Benani");
             medecin.setSpecialite("Cardiologie");
+            
+            PatientDao patientDao = new PatientDao();
+            boolean patientAjoute = patientDao.create(patient);
+            if (patientAjoute) {
+                System.out.println("Patient ajouté avec succès !");
+            }
 
-            // Conversion de la date
+            MedecinDao medecinDao = new MedecinDao();
+            boolean medecinAjoute = medecinDao.create(medecin);
+            if (medecinAjoute) {
+                System.out.println("Médecin ajouté avec succès !");
+            }
+
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-            Date dateConsultation = sdf.parse("09/04/2025");
+            Date dateConsultation = null;
+            try {
+                dateConsultation = sdf.parse("09/03/2025");
+            } catch (ParseException ex) {
+                Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
-            // Création de la consultation
             Consultation consultation = new Consultation();
             consultation.setPatient(patient);
             consultation.setMedecin(medecin);
             consultation.setDateConsultation(dateConsultation);
-            consultation.setDiagnostic("Hypertension artérielle");
+            consultation.setDiagnostic("Cardio");
 
-            // Sauvegarde via DAO
             ConsultationDao cd = new ConsultationDao();
 
-            // Tu dois d'abord sauvegarder patient et médecin s'ils ne le sont pas
-            cd.createEntities(patient, medecin); // <-- tu dois ajouter cette méthode si nécessaire
+            cd.createEntities(patient, medecin);
 
-            cd.create(consultation);
+            boolean ajout = cd.create(consultation);
+            if (ajout) {
+                System.out.println("Consultation enregistrée avec succès !");
+            }
 
-            System.out.println("Consultation enregistrée avec succès !");
+            Consultation toDelete = cd.findById(1);
+            if (toDelete != null) {
+                boolean deleted = cd.delete(toDelete);
+                System.out.println(deleted ? "Consultation supprimée." : "Échec de suppression.");
+            } else {
+                System.out.println("Consultation avec ID 1 introuvable.");
+            }
+
+            List<Consultation> consultations = cd.findAll();
+            for (Consultation c : consultations) {
+                System.out.println("ID: " + c.getId() +
+                                   ", Patient: " + c.getPatient().getNom() +
+                                   ", Médecin: " + c.getMedecin().getNom() +
+                                   ", Date: " + sdf.format(c.getDateConsultation()) +
+                                   ", Diagnostic: " + c.getDiagnostic());
+            }
+
         } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 }

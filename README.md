@@ -4,11 +4,11 @@
 ![image](https://github.com/user-attachments/assets/a7023a06-0444-4458-94ce-e8082962e730)
 
 
-## Contexte
+## 📌 Contexte
 
 Le projet Gestion de Clinique vise à développer une application logicielle pour automatiser les processus administratifs et médicaux d'une clinique. Cette solution permettra de centraliser les données des patients, des médecins, des rendez-vous et des prescriptions, améliorant ainsi l'efficacité et la qualité des soins.
 
-## Problématique
+## 🛠️ Problématique
 Actuellement, la clinique utilise des systèmes manuels (dossiers papier, fichiers Excel) pour gérer :
 
 Les dossiers patients
@@ -28,7 +28,7 @@ Cela entraîne :
 ✅ Une difficulté à générer des rapports (statistiques, suivi des patients).
 
 
-## Objectifs
+## 🎯 Objectifs
 
 L'application aura pour but de :
 
@@ -57,4 +57,4 @@ util : Classe utilitaire (HibernateUtil)
 test : Scripts pour créer des objets de test
 
 
-## Diagramme de Classe
+## 📊 Diagramme de Classe

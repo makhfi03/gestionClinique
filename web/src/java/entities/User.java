@@ -3,8 +3,8 @@ package entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "patients")
-public class Patient {
+@Table(name = "users")
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,13 +13,13 @@ public class Patient {
     @Column(name = "nom")
     private String nom;
 
-    @Column(name = "age")
-    private int age;
+    @Column(name = "email", unique = true)
+    private String email;
 
-    @Column(name = "sexe")
-    private String sexe;
+    @Column(name = "mot_de_passe")
+    private String motDePasse;
 
-    public Patient() {}
+    public User() {}
 
     public int getId() {
         return id;
@@ -37,19 +37,19 @@ public class Patient {
         this.nom = nom;
     }
 
-    public int getAge() {
-        return age;
+    public String getEmail() {
+        return email;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getSexe() {
-        return sexe;
+    public String getMotDePasse() {
+        return motDePasse;
     }
 
-    public void setSexe(String sexe) {
-        this.sexe = sexe;
+    public void setMotDePasse(String motDePasse) {
+        this.motDePasse = motDePasse;
     }
 }

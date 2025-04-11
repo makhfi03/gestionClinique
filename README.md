@@ -1,5 +1,5 @@
 
-# Projet de Gestion de Clinique
+# Système de Gestion de Clinique
 
 
 ![image](https://github.com/user-attachments/assets/a7023a06-0444-4458-94ce-e8082962e730)

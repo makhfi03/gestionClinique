@@ -59,3 +59,4 @@ test : Scripts pour créer des objets de test
 
 ## 📊 Diagramme de Classe
 ![Image](https://github.com/user-attachments/assets/438fd091-0998-4231-87d4-c9233ea0db32)
+## modèle conceptuel de la base généré

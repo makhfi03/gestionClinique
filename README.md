@@ -1,5 +1,5 @@
 
-<h1 align="center"> Système de Gestion de Clinique </h1>
+<h1 align="center"><u> Système de Gestion de Clinique </u></h1>
 
 
 ![image](https://github.com/user-attachments/assets/a7023a06-0444-4458-94ce-e8082962e730)

@@ -50,8 +50,6 @@ dao : Accès aux données (CRUD) via Hibernate
 
 entities : Tes classes @Entity (Patient, Médecin, Consultation, User)
 
-controller : Tes servlets pour gérer les actions utilisateur (ajout, affichage, etc.)
-
 util : Classe utilitaire (HibernateUtil)
 
 test : Scripts pour créer des objets de test

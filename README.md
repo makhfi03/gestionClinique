@@ -61,6 +61,7 @@ test : Scripts pour créer des objets de test
 ![Image](https://github.com/user-attachments/assets/438fd091-0998-4231-87d4-c9233ea0db32)
 ## modèle conceptuel de la base généré
 ![Image](https://github.com/user-attachments/assets/02f6a5e3-7f71-4ea9-8d57-2e1fc17a2c20)
+## exécution des tests dans la console
 <img width="754" alt="Image" src="https://github.com/user-attachments/assets/e81c7ead-e494-4a79-bdea-bdab0b35760d" />
 
 <img width="734" alt="Image" src="https://github.com/user-attachments/assets/e3c937a6-fc4f-498a-92c5-7d4b0fd601af" />

@@ -11,17 +11,13 @@ Le projet Gestion de Clinique vise à développer une application pour simplifie
 ## 🛠️ Problématique
 Actuellement, la clinique utilise des systèmes manuels (dossiers papier, fichiers Excel) pour gérer :
 
-Enregistrer, modifier ou supprimer un rendez-vous,
+Enregistrer, modifier ou supprimer une consultation,
 
 Gérer les disponibilités des médecins, 
 
 Stocker les historiques médicaux des patients, 
 
 Les dossiers patients,
-
-La planification des rendez-vous,
-
-La facturation.
 
 Cela entraîne :
 

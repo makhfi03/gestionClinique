@@ -19,7 +19,7 @@ Stocker les historiques médicaux des patients,
 
 Les dossiers patients,
 
-  Cela entraîne :
+    Cela entraîne :
 
 ✅ Des erreurs humaines (doublons, perte de données).
 
@@ -30,7 +30,7 @@ Les dossiers patients,
 
 ## 🎯 Objectifs
 
-  L'application aura pour but de :
+    L'application aura pour but de :
 
 ✔ Numériser la gestion des patients (création, modification, consultation).
 

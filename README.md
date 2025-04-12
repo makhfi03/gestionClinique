@@ -6,16 +6,20 @@
 
 ## 📌 Contexte
 
-Le projet Gestion de Clinique vise à développer une application logicielle pour automatiser les processus administratifs et médicaux d'une clinique. Cette solution permettra de centraliser les données des patients, des médecins, des rendez-vous et des prescriptions, améliorant ainsi l'efficacité et la qualité des soins.
+Le projet Gestion de Clinique vise à développer une application pour simplifier les interactions entre médecins et patients, en automatisant le suivi des consultations et la gestion des dossiers médicaux et administratifs. La solution centralisera les données des médecins (spécialités, disponibilités), des patients (historique, prescriptions) et des consultations (diagnostics, dates), optimisant ainsi l'organisation des soins
 
 ## 🛠️ Problématique
 Actuellement, la clinique utilise des systèmes manuels (dossiers papier, fichiers Excel) pour gérer :
 
+Enregistrer, modifier ou supprimer un rendez-vous 
+
+Gérer les disponibilités des médecins 
+
+Stocker les historiques médicaux des patients 
+
 Les dossiers patients
 
 La planification des rendez-vous
-
-La gestion du personnel médical
 
 La facturation
 
@@ -25,7 +29,7 @@ Cela entraîne :
 
 ✅ Une perte de temps dans la recherche d'informations.
 
-✅ Une difficulté à générer des rapports (statistiques, suivi des patients).
+✅ Une difficulté à générer des rapports et des statistiques (nombre de consultations par médecin/spécialité, suivi des patients).
 
 
 ## 🎯 Objectifs
@@ -33,10 +37,6 @@ Cela entraîne :
 L'application aura pour but de :
 
 ✔ Numériser la gestion des patients (création, modification, consultation).
-
-✔ Faciliter la prise de rendez-vous (disponibilité des médecins, alertes de conflits).
-
-✔ Automatiser la facturation (génération de factures, suivi des paiements).
 
 ✔ Sécuriser les données (accès par rôles : administrateur, médecin, secrétaire).
 

@@ -6,10 +6,10 @@
 
 ## 📌 Contexte
 
-Le projet Gestion de Clinique vise à développer une application pour simplifier les interactions entre médecins et patients, en automatisant le suivi des consultations et la gestion des dossiers médicaux et administratifs. La solution centralisera les données des médecins (spécialités, disponibilités), des patients (historique, prescriptions) et des consultations (diagnostics, dates), optimisant ainsi l'organisation des soins.
+    Le projet Gestion de Clinique vise à développer une application pour simplifier les interactions entre médecins et patients, en automatisant le suivi des consultations et la gestion des dossiers médicaux et administratifs. La solution centralisera les données des médecins (spécialités, disponibilités), des patients (historique, prescriptions) et des consultations (diagnostics, dates), optimisant ainsi l'organisation des soins.
 
 ## 🛠️ Problématique
-Actuellement, la clinique utilise des systèmes manuels (dossiers papier, fichiers Excel) pour gérer :
+    Actuellement, la clinique utilise des systèmes manuels (dossiers papier, fichiers Excel) pour gérer :
 
 Enregistrer, modifier ou supprimer une consultation,
 
@@ -19,7 +19,7 @@ Stocker les historiques médicaux des patients,
 
 Les dossiers patients,
 
-Cela entraîne :
+  Cela entraîne :
 
 ✅ Des erreurs humaines (doublons, perte de données).
 
@@ -30,7 +30,7 @@ Cela entraîne :
 
 ## 🎯 Objectifs
 
-L'application aura pour but de :
+  L'application aura pour but de :
 
 ✔ Numériser la gestion des patients (création, modification, consultation).
 

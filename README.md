@@ -58,13 +58,33 @@ test : Scripts pour créer des objets de test
 
 ## 🗂️ Modèle conceptuel de la base généré
 
-![Image](https://github.com/user-attachments/assets/02f6a5e3-7f71-4ea9-8d57-2e1fc17a2c20)
+![image](https://github.com/user-attachments/assets/126d87f9-2869-457e-9e4d-27c0f7718aa3)
+
 
 ## 🖥️ Exécution des tests dans la console
 
-<img width="754" alt="Image" src="https://github.com/user-attachments/assets/e81c7ead-e494-4a79-bdea-bdab0b35760d" />
+![image](https://github.com/user-attachments/assets/25a0a4c0-08bb-4c9d-9aac-7acfd72ac7a1)
 
-<img width="734" alt="Image" src="https://github.com/user-attachments/assets/e3c937a6-fc4f-498a-92c5-7d4b0fd601af" />
 
-<img width="426" alt="Image" src="https://github.com/user-attachments/assets/607e8bcd-e47c-48fb-9f42-292d0222585f" />
+![image](https://github.com/user-attachments/assets/14abad52-8859-42ca-b6b1-3440458f53de)
+
+
+![image](https://github.com/user-attachments/assets/62a105cd-cfa0-4254-867f-bc822f52d9f7)
+
+
+![image](https://github.com/user-attachments/assets/84f5dbb6-19f8-4847-af30-f27a959eea63)
+
+
+![image](https://github.com/user-attachments/assets/026323ca-6dcd-4d44-91c4-4d4430f11a57)
+
+
+![image](https://github.com/user-attachments/assets/3c6fc168-5306-481c-9268-7d9dda7deff5)
+
+
+![image](https://github.com/user-attachments/assets/67a1eade-8607-4034-b641-f2eb1d88e0fd)
+
+
+
+
+
 
